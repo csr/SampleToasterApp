@@ -14,6 +14,7 @@
 		65D5E18A26CFDEFD00609AAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65D5E18926CFDEFD00609AAB /* Assets.xcassets */; };
 		65D5E18D26CFDEFD00609AAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65D5E18B26CFDEFD00609AAB /* LaunchScreen.storyboard */; };
 		65D5E19526CFE83700609AAB /* GIF-Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D5E19426CFE83700609AAB /* GIF-Support.swift */; };
+		65E6D17E26D633EE00AC35D7 /* toaster_spring.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65E6D17D26D633EE00AC35D7 /* toaster_spring.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		65D5E18C26CFDEFD00609AAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65D5E18E26CFDEFD00609AAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65D5E19426CFE83700609AAB /* GIF-Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GIF-Support.swift"; sourceTree = "<group>"; };
+		65E6D17D26D633EE00AC35D7 /* toaster_spring.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = toaster_spring.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				65D5E18B26CFDEFD00609AAB /* LaunchScreen.storyboard */,
 				65D5E18E26CFDEFD00609AAB /* Info.plist */,
 				65D5E19426CFE83700609AAB /* GIF-Support.swift */,
+				65E6D17D26D633EE00AC35D7 /* toaster_spring.mp3 */,
 			);
 			path = MES_Full_Stack_Intro_to_iOS;
 			sourceTree = "<group>";
@@ -127,6 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65E6D17E26D633EE00AC35D7 /* toaster_spring.mp3 in Resources */,
 				65D5E18D26CFDEFD00609AAB /* LaunchScreen.storyboard in Resources */,
 				65D5E18A26CFDEFD00609AAB /* Assets.xcassets in Resources */,
 				65D5E18826CFDEFB00609AAB /* Main.storyboard in Resources */,

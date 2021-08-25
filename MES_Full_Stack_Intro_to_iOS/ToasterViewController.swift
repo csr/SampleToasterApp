@@ -6,10 +6,14 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ToasterViewController: UIViewController {
 
     var toasterImageView: UIImageView!
+
+    // To play the toaster sound
+    var player: AVAudioPlayer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,7 +79,34 @@ class ToasterViewController: UIViewController {
     }
 
     private func turnOnToaster() {
+        // Update image
         toasterImageView?.image = UIImage(named: "toaster_with_bread")
+
+        playToasterSpringSound()
+    }
+}
+
+extension ToasterViewController {
+    func playToasterSpringSound() {
+        guard let url = Bundle.main.url(forResource: "toaster_spring", withExtension: "mp3") else { return }
+
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+
+            /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+
+            /* iOS 10 and earlier require the following line:
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
+
+            guard let player = player else { return }
+
+            player.play()
+
+        } catch let error {
+            print(error.localizedDescription)
+        }
     }
 }
 
