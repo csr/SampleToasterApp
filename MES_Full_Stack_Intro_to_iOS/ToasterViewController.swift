@@ -71,10 +71,10 @@ class ToasterViewController: UIViewController {
 
     @objc
     private func didTapToastButton() {
-        toast()
+        turnOnToaster()
     }
 
-    private func toast() {
+    private func turnOnToaster() {
         toasterImageView?.image = UIImage(named: "toaster_with_bread")
     }
 }
